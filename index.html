@@ -1,6 +1,7 @@
 <html>
   <head>
-	<meta name="description" content="Easy links to connect people to your server."><meta property="og:image" content="https://community.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016">
+	  <meta name="description" content="Easy links to connect people to your server.">
+    <meta property="og:image" content="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png">
     <link rel="icon" href="https://steamcommunity.com/favicon.ico">
     <link rel="stylesheet" href="main.css">
   </head>
@@ -12,20 +13,22 @@
       </div>
       <br>
       <h2>How to use this website:</h2>
-      <div>https://steamconnect.site/?"IP or Domain":"Server port"</div>
+      <div>https://steamconnect.site/?(IP or Domain):(Server port)</div>
       <div>
         <h3>Examples:</h3>
         <ul>
-          <li>https://https://steamconnect.site/?mycoolserver.example:27015</li>
           <li>https://steamconnect.site/?192.168.0.1:27015</li>
+          <li>https://steamconnect.site/?mycoolserver.example:27015</li>
         </ul>
       </div>
   </body>
   <script>
      /* ad-free scripting! */
     var server = window.location.href.split("?")[1];
-    window.location = "steam://connect/" + server; 
-    var refresh = '<meta http-equiv="refresh" content="0;url=' + window.location + '">';
-    document.write(refresh);
+    if (server != undefined) {
+      window.location = "steam://connect/" + server; 
+      var refresh = '<meta http-equiv="refresh" content="0;url=' + window.location + '">';
+      document.write(refresh);
+    } 
   </script>
 </html>
