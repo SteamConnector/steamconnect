@@ -8,14 +8,14 @@ body {
 }
 
 a:link {
-  color: blue;
+  color: lightblue;
 }
 a:visited {
-  color: blue;
+  color: lightblue;
 }
 a:hover {
-  color: darkblue;
+  color: blue;
 }
 a:active {
-  color: blue;
+  color: lightblue;
 } 
