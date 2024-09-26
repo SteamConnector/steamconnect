@@ -6,3 +6,16 @@ body {
   background-size: 100% 100%;
   color:  aliceblue
 }
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: darkblue;
+}
+a:active {
+  color: blue;
+} 

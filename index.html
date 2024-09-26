@@ -6,14 +6,23 @@
   </head>
   <title>You're on your way to...</title>
   <body>
-    <p>
-        <h1>Welcome to SteamConnect.site</h1>
-        <div><a href="https://github.com/dangreene0/steamconnect">This website is open source!</a></div>
-        <div>https://steamconnect.site/?"IP or Domain":"Server port"</div>
-        <div>Examples:<br>https://https://steamconnect.site/?mycoolserver.example:27015<br>https://steamconnect.site/?192.168.0.1:27015</div>
-    </p>
+      <h1>Welcome to SteamConnect.Site</h1>
+      <div>
+        <a href="https://github.com/dangreene0/steamconnect">This website is open source!</a>
+      </div>
+      <br>
+      <h2>How to use this website:</h2>
+      <div>https://steamconnect.site/?"IP or Domain":"Server port"</div>
+      <div>
+        <h3>Examples:</h3>
+        <ul>
+          <li>https://https://steamconnect.site/?mycoolserver.example:27015</li>
+          <li>https://steamconnect.site/?192.168.0.1:27015</li>
+        </ul>
+      </div>
   </body>
   <script>
+     /* ad-free scripting! */
     var server = window.location.href.split("?")[1];
     window.location = "steam://connect/" + server; 
     var refresh = '<meta http-equiv="refresh" content="0;url=' + window.location + '">';
