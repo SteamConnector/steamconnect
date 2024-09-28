@@ -28,18 +28,9 @@
         </ul>
       </div>
       <div>
-        <h3>Contact:</h3>
+        <h2>Contact</h2>
         Please report any issues to <a href="https://github.com/dangreene0/steamconnect">the GitHub repo.</a>
       </div>
   </body>
-  <script>
-     /* ad-free scripting! */
-    var link = window.location.href
-    var server = link.split("?")[1];
-    if (server != undefined && !link.endsWith("?")) {
-      window.location = "steam://connect/" + server; 
-      var refresh = '<meta http-equiv="refresh" content="0;url=' + window.location + '">';
-      document.write(refresh);
-    } 
-  </script>
+  <script src="refresh.js"></script>
 </html>
